@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crowd Funding</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <br>
+    <br>
+    <div class="row">
+      <div class="col col-12 col-md-4 col-sm-4" style="text-align:center ;">
+          <button type="button" class="btn btn-primary btn-lg">Donate</button>
+      </div>
+      <div class="col col-12 col-md-4 col-sm-4" style="text-align: center;">
+        <button type="button" class="btn btn-primary btn-lg" onclick="App.displayBalance()">Balance( <span id="dispbal"></span> )</button>
+      </div>
+      <div class="col col-12 col-md-4 col-sm-4"></div>
+      <div class="col col-12 col-md-4 col-sm-4"></div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col col-12 col-md-2"> </div>
+      <div class="col col-12 col-md-8">
+        <table class="table">
+          <tr>
+            <td>
+              enter Amount in ETH
+            </td>
+            <td>
+              <input type="text" class="form-control" id="amt">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center;">
+              <button type="button" class="btn btn-primary btn-lg" onclick="App.donateFunds()">Donate</button></td>
+          </tr>
+        </table>  
+      </div>
+      <div class="col col-12 col-md-2"> </div>
+    </div>
+  </div>
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

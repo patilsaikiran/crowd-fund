@@ -7,3 +7,4 @@ contract Crowd {
       balance=balance+msg.value;
    }
 }
+//sample
